@@ -45,7 +45,7 @@ jobs:
     - name: Install Mint and Packages
       run: |
         brew install mint
-        mint bootstrap --link --force
+        mint install realm/SwiftLint@0.39.1 --force
 
     - name: Run Danger
       run: bundle exec danger
